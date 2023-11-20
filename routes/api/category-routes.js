@@ -58,7 +58,7 @@ router.put('/:id', async (req, res) => {
     );
 
     return res.json(categoryData);
-    
+
   } catch (error) {
     console.error(error)
     res.status(500).json({message: 'Something is broken.'})
@@ -68,6 +68,13 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
   try {
+    const categoryData = await Category.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+
+    return res.json(categoryData);
     
   } catch (error) {
     console.error(error)
