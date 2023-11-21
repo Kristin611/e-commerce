@@ -5,7 +5,7 @@
 The purpose of this assignment was to build a back end for an e-commerce site using Sequelize to interact with the MySQL database.
 The application demonstrates the fundamental architecture of e-commerce sites. 
 Insomnia Core was used to test the application's GET, POST, PUT, and DELETE routes for the category, product, and tag schemas/tables.
-Technologies used to build the application's back end were Insomnia Core, Express.js, Sequelize, MySQL2, and Dotenv. Dotenv was used to encrypt sensitive data like usernames and passwords. 
+Technologies used to build and test the application's back end were Express.js, Sequelize, MySQL2, and Insomnia Core. Additionally, Dotenv was used to protect sensitive data like usernames and passwords. 
 
 Below is the link to the video that shows how I seeded the database and started the application from the command line:
 
